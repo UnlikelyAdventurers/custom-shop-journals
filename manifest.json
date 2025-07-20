@@ -1,0 +1,17 @@
+{
+  "name": "custom-shop-journals",
+  "title": "Custom Shop Journals",
+  "description": "Adds stylized shop interfaces to journal entries.",
+  "author": "Chris McDougall",
+  "version": "1.0.0",
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "11",
+  "scripts": ["scripts/shop-journal-sheet.js"],
+  "styles": [],
+  "esmodules": [],
+  "packs": [],
+  "languages": [],
+  "url": "https://github.com/your-repo/custom-shop-journals",
+  "manifest": "modules/custom-shop-journals/module.json",
+  "download": "C:\Users\mcdou\AppData\Local\FoundryVTT\Data\modules\custom-shop-journals"
+}

@@ -1,0 +1,37 @@
+<form class="shop-journal-form">
+  <header class="shop-header">
+    <h1 class="shop-title">{{title}}</h1>
+    <div class="shop-meta">
+      <p><strong>Shop Type:</strong> {{shop.type}}</p>
+      <p><strong>Location:</strong> {{shop.location}}</p>
+      <p><strong>Shop Owner:</strong> {{shop.owner}}</p>
+    </div>
+  </header>
+
+  <section class="shop-items">
+    <h2>Items for Sale</h2>
+
+    {{#if shop.items.length}}
+      <table class="shop-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each shop.items}}
+            <tr class="shop-item" data-item-name="{{this.name}}">
+              <td>{{this.name}}</td>
+              <td>{{this.qty}}</td>
+              <td>{{this.price}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    {{else}}
+      <p>No items listed.</p>
+    {{/if}}
+  </section>
+</form>
